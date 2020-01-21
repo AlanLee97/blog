@@ -1,10 +1,12 @@
 {
   "devDependencies": {
-    "vuepress": "^1.2.0"
+    "vuepress": "^1.2.0",
+    "vuepress-theme-reco": "^1.2.1"
   },
   "scripts": {
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
     "publish": "deploy.sh"
-  }
+  },
+  "dependencies": {}
 }
