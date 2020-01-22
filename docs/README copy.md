@@ -1,6 +1,4 @@
 ---
-title: 摘要
-date: 2019-11-01
 home: true
 heroImage: /AlanLee.jpg
 heroImageStyle: {
@@ -14,8 +12,11 @@ bgImage: '/bg.jpg'
 bgImageStyle: {
   height: '500px'
 }
+
 isShowTitleInHome: false
 
+title: AlanLee的博客
+date: 2019-11-01
 ---
 
 这里的内容会被显示成摘要。
@@ -26,3 +27,6 @@ isShowTitleInHome: false
 <!-- more -->
 
 这里是文章的正文。
+
+# AlanLee的小窝~
+小小程序员 Alan
