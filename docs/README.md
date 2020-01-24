@@ -10,7 +10,7 @@ heroImageStyle: {
   borderRadius: '50%',
   boxShadow: '0 5px 18px rgba(0,0,0,0.2)'
 }
-bgImage: '/bg.jpg'
+bgImage: '/bg2.jpg'
 bgImageStyle: {
   height: '500px'
 }
@@ -18,11 +18,22 @@ isShowTitleInHome: false
 
 ---
 
-这里的内容会被显示成摘要。
+:::tip
+Welcome to home of AlanLee~<br/>
+欢迎来到李步官的小窝~
 
-1. 可以放置文案；
-2. 可以放置图片作为文章封面。
+:::
+
+<img :src="$withBase=('/note_images/two_girl.jpg')"/>
 
 <!-- more -->
 
-这里是文章的正文。
+学历 | 中山大学新华学院 | 本科
+
+姓名 | 李步官 | AlanLee
+
+生日 | 1997.04
+
+爱好 | 运动
+
+AlanLee热爱编程，喜欢学习互联网技术。
