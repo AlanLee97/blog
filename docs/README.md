@@ -24,7 +24,7 @@ Welcome to home of AlanLee~<br/>
 
 :::
 
-<img :src="$withBase=('/note_images/two_girl.jpg')"/>
+<img :src="$withBase=('note_images/two_girl.jpg')"/>
 
 <!-- more -->
 

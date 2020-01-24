@@ -54,7 +54,7 @@ module.exports = {
 
                 //python
                 {
-                    title: 'python',
+                    title: 'Python',
                     collapsable: true,
                     path: '/backend/python/',
                     children: [
@@ -74,7 +74,7 @@ module.exports = {
             path: '/frontend/',
             children: [
                 {
-                    title: 'vue',
+                    title: 'Vue',
                     collapsable: true,
                     path: '/frontend/vue/',
                     children: [
@@ -99,7 +99,7 @@ module.exports = {
 
                 //html
                 {
-                    title: 'html',
+                    title: 'HTML',
                     collapsable: true,
                     path: '/frontend/html/',
                     children: [
@@ -109,7 +109,7 @@ module.exports = {
 
                 //html
                 {
-                    title: 'css',
+                    title: 'CSS',
                     collapsable: true,
                     path: '/frontend/css/',
                     children: [
@@ -119,7 +119,7 @@ module.exports = {
 
                 //javascript
                 {
-                    title: 'javascript',
+                    title: 'Javascript',
                     collapsable: true,
                     path: '/frontend/js/',
                     children: [
@@ -129,7 +129,7 @@ module.exports = {
 
                 //jquery
                 {
-                    title: 'jquery',
+                    title: 'jQuery',
                     collapsable: true,
                     path: '/frontend/jquery/',
                     children: [
