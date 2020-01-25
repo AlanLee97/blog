@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Linux 用户和组管理 | Blog | AlanLee</title>
+    <meta name="description" content="If the short cut to learning, it also must be diligent.">
+    <link rel="icon" href="/favicon.png">
+    
+    <link rel="preload" href="/assets/css/0.styles.066929be.css" as="style"><link rel="preload" href="/assets/js/app.ae300a49.js" as="script"><link rel="preload" href="/assets/js/3.0a2a925c.js" as="script"><link rel="preload" href="/assets/js/1.cbe639dd.js" as="script"><link rel="preload" href="/assets/js/66.97fdd3d6.js" as="script"><link rel="prefetch" href="/assets/js/10.e2163be0.js"><link rel="prefetch" href="/assets/js/11.90fedfb5.js"><link rel="prefetch" href="/assets/js/12.77d8ea87.js"><link rel="prefetch" href="/assets/js/13.ed63e3bf.js"><link rel="prefetch" href="/assets/js/14.f553fc10.js"><link rel="prefetch" href="/assets/js/15.79bce0ad.js"><link rel="prefetch" href="/assets/js/16.9f06310a.js"><link rel="prefetch" href="/assets/js/17.45de51d4.js"><link rel="prefetch" href="/assets/js/18.8815f1f2.js"><link rel="prefetch" href="/assets/js/19.92ab3fbc.js"><link rel="prefetch" href="/assets/js/20.9427e4e1.js"><link rel="prefetch" href="/assets/js/21.844bd4d9.js"><link rel="prefetch" href="/assets/js/22.68778d15.js"><link rel="prefetch" href="/assets/js/23.4539b944.js"><link rel="prefetch" href="/assets/js/24.049c7766.js"><link rel="prefetch" href="/assets/js/25.b6430b90.js"><link rel="prefetch" href="/assets/js/26.96f4e90c.js"><link rel="prefetch" href="/assets/js/27.7c75cde8.js"><link rel="prefetch" href="/assets/js/28.42d89cce.js"><link rel="prefetch" href="/assets/js/29.b904980d.js"><link rel="prefetch" href="/assets/js/30.ca33bdd0.js"><link rel="prefetch" href="/assets/js/31.69efdc63.js"><link rel="prefetch" href="/assets/js/32.b0d7094f.js"><link rel="prefetch" href="/assets/js/33.1b80926c.js"><link rel="prefetch" href="/assets/js/34.5f819141.js"><link rel="prefetch" href="/assets/js/35.5a866249.js"><link rel="prefetch" href="/assets/js/36.1244386f.js"><link rel="prefetch" href="/assets/js/37.f1909b56.js"><link rel="prefetch" href="/assets/js/38.099288b2.js"><link rel="prefetch" href="/assets/js/39.301cb527.js"><link rel="prefetch" href="/assets/js/4.dc40b225.js"><link rel="prefetch" href="/assets/js/40.d64af3a1.js"><link rel="prefetch" href="/assets/js/41.6adcffd0.js"><link rel="prefetch" href="/assets/js/42.547c1b88.js"><link rel="prefetch" href="/assets/js/43.1c7cf9a2.js"><link rel="prefetch" href="/assets/js/44.d3dc61a0.js"><link rel="prefetch" href="/assets/js/45.447bcbb2.js"><link rel="prefetch" href="/assets/js/46.ef27fc65.js"><link rel="prefetch" href="/assets/js/47.11581248.js"><link rel="prefetch" href="/assets/js/48.385f8498.js"><link rel="prefetch" href="/assets/js/49.5cde14cb.js"><link rel="prefetch" href="/assets/js/5.73dc573c.js"><link rel="prefetch" href="/assets/js/50.18e50764.js"><link rel="prefetch" href="/assets/js/51.37b4db17.js"><link rel="prefetch" href="/assets/js/52.e2446e44.js"><link rel="prefetch" href="/assets/js/53.4a3b8f30.js"><link rel="prefetch" href="/assets/js/54.ba0f7bec.js"><link rel="prefetch" href="/assets/js/55.8f91ca7a.js"><link rel="prefetch" href="/assets/js/56.27723965.js"><link rel="prefetch" href="/assets/js/57.32f0fe14.js"><link rel="prefetch" href="/assets/js/58.19ec6f5d.js"><link rel="prefetch" href="/assets/js/59.72760dee.js"><link rel="prefetch" href="/assets/js/6.e6210963.js"><link rel="prefetch" href="/assets/js/60.11c3125d.js"><link rel="prefetch" href="/assets/js/61.76916866.js"><link rel="prefetch" href="/assets/js/62.b05f6a1b.js"><link rel="prefetch" href="/assets/js/63.69251ec8.js"><link rel="prefetch" href="/assets/js/64.f3fc7286.js"><link rel="prefetch" href="/assets/js/65.b05ee32e.js"><link rel="prefetch" href="/assets/js/67.f0d8210d.js"><link rel="prefetch" href="/assets/js/68.a5c3a9c7.js"><link rel="prefetch" href="/assets/js/69.6fb5d265.js"><link rel="prefetch" href="/assets/js/7.a1f8faa9.js"><link rel="prefetch" href="/assets/js/70.cb20ed1a.js"><link rel="prefetch" href="/assets/js/71.d575b436.js"><link rel="prefetch" href="/assets/js/8.fa5bd65a.js"><link rel="prefetch" href="/assets/js/9.8a43d9ed.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.066929be.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div><div class="theme-container" data-v-4698c43e><div data-v-4698c43e><div id="loader-wrapper" class="loading-wrapper" data-v-4b73742e data-v-4698c43e data-v-4698c43e><div class="loader-main" data-v-4b73742e><div data-v-4b73742e></div><div data-v-4b73742e></div><div data-v-4b73742e></div><div data-v-4b73742e></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-6cbeab0a data-v-4698c43e data-v-4698c43e><h3 class="title" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a>AlanLee</h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a><input type="password" value="" data-v-6cbeab0a> <span data-v-6cbeab0a>Konck! Knock!</span> <button data-v-6cbeab0a>OK</button></label> <div class="footer" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a><span data-v-6cbeab0a><i class="iconfont reco-theme" data-v-6cbeab0a></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-6cbeab0a>vuePress-theme-reco</a></span> <span data-v-6cbeab0a><i class="iconfont reco-copyright" data-v-6cbeab0a></i> <a data-v-6cbeab0a><span data-v-6cbeab0a>AlanLee</span>
+            
+          <!---->
+          2020
+        </a></span></div></div> <div class="hide" data-v-4698c43e><header class="navbar" data-v-4698c43e><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Blog | AlanLee</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont undefined"></i>
+  主页
+</a></div><div class="nav-item"><a href="/frontend/" class="nav-link"><i class="iconfont undefined"></i>
+  前端
+</a></div><div class="nav-item"><a href="/mobileend/" class="nav-link"><i class="iconfont undefined"></i>
+  移动端
+</a></div><div class="nav-item"><a href="/backend/" class="nav-link"><i class="iconfont undefined"></i>
+  后端
+</a></div><div class="nav-item"><a href="/server/" class="nav-link router-link-active"><i class="iconfont undefined"></i>
+  服务器
+</a></div><div class="nav-item"><a href="/database/" class="nav-link"><i class="iconfont undefined"></i>
+  数据库
+</a></div><div class="nav-item"><a href="/other/" class="nav-link"><i class="iconfont undefined"></i>
+  其他
+</a></div><div class="nav-item"><a href="/devtool/" class="nav-link"><i class="iconfont undefined"></i>
+  开发工具
+</a></div><div class="nav-item"><a href="/about/" class="nav-link"><i class="iconfont undefined"></i>
+  关于我
+</a></div> <a href="https://github.com/AlanLee97" target="_blank" rel="noopener noreferrer" class="repo-link"><i class="iconfont reco-我的github"></i>
+    我的GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask" data-v-4698c43e></div> <aside class="sidebar" data-v-4698c43e><div class="personal-info-wrapper" data-v-6c8ffc9c><img src="/AlanLee.jpg" alt="author-avatar" class="personal-img" data-v-6c8ffc9c> <h3 class="name" data-v-6c8ffc9c>
+    AlanLee
+  </h3> <div class="num" data-v-6c8ffc9c><div data-v-6c8ffc9c><h3 data-v-6c8ffc9c>19</h3> <h6 data-v-6c8ffc9c>文章</h6></div> <div data-v-6c8ffc9c><h3 data-v-6c8ffc9c>5</h3> <h6 data-v-6c8ffc9c>标签</h6></div></div> <hr data-v-6c8ffc9c></div> <nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link"><i class="iconfont undefined"></i>
+  主页
+</a></div><div class="nav-item"><a href="/frontend/" class="nav-link"><i class="iconfont undefined"></i>
+  前端
+</a></div><div class="nav-item"><a href="/mobileend/" class="nav-link"><i class="iconfont undefined"></i>
+  移动端
+</a></div><div class="nav-item"><a href="/backend/" class="nav-link"><i class="iconfont undefined"></i>
+  后端
+</a></div><div class="nav-item"><a href="/server/" class="nav-link router-link-active"><i class="iconfont undefined"></i>
+  服务器
+</a></div><div class="nav-item"><a href="/database/" class="nav-link"><i class="iconfont undefined"></i>
+  数据库
+</a></div><div class="nav-item"><a href="/other/" class="nav-link"><i class="iconfont undefined"></i>
+  其他
+</a></div><div class="nav-item"><a href="/devtool/" class="nav-link"><i class="iconfont undefined"></i>
+  开发工具
+</a></div><div class="nav-item"><a href="/about/" class="nav-link"><i class="iconfont undefined"></i>
+  关于我
+</a></div> <a href="https://github.com/AlanLee97" target="_blank" rel="noopener noreferrer" class="repo-link"><i class="iconfont reco-我的github"></i>
+    我的GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><a href="/server/" class="sidebar-link">服务器</a></li><li><section class="sidebar-group collapsable depth-0"><a href="/server/" class="sidebar-heading clickable router-link-active"><span>服务器</span> <span class="arrow right"></span></a> <!----></section></li></ul> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-6cbeab0a data-v-4698c43e><h3 class="title" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a></h3> <!----> <label id="box" class="inputBox" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a><input type="password" value="" data-v-6cbeab0a> <span data-v-6cbeab0a>Konck! Knock!</span> <button data-v-6cbeab0a>OK</button></label> <div class="footer" style="display:none;" data-v-6cbeab0a data-v-6cbeab0a><span data-v-6cbeab0a><i class="iconfont reco-theme" data-v-6cbeab0a></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-6cbeab0a>vuePress-theme-reco</a></span> <span data-v-6cbeab0a><i class="iconfont reco-copyright" data-v-6cbeab0a></i> <a data-v-6cbeab0a><span data-v-6cbeab0a>AlanLee</span>
+            
+          <!---->
+          2020
+        </a></span></div></div> <div data-v-4698c43e><main class="page"><!----> <div class="page-title" style="display:none;"><h1>Linux 用户和组管理</h1> <hr> <div data-v-484a899e><i class="iconfont reco-account" data-v-484a899e><span data-v-484a899e>AlanLee</span></i> <i class="iconfont reco-date" data-v-484a899e><span data-v-484a899e>2020-01-24</span></i> <!----> <i class="iconfont reco-tag tags" data-v-484a899e><span class="tag-item" data-v-484a899e>
+      linux
+    </span></i></div></div> <div class="theme-reco-content content__default" style="display:none;"><h1 id="linux-用户和组管理"><a href="#linux-用户和组管理" class="header-anchor">#</a> Linux 用户和组管理</h1> <h2 id="概述"><a href="#概述" class="header-anchor">#</a> 概述</h2> <p>Linux 操作系统是一个多用户操作系统，它允许多用户同时登录到系统上并使用资源。系统会根据账户来区分每个用户的文件，进程，任务和工作环境，使得每个用户工作都不受干扰。</p> <h2 id="使用-root-用户"><a href="#使用-root-用户" class="header-anchor">#</a> 使用 Root 用户</h2> <p>在实际生产操作中，我们基本上都是使用超级管理员账户操作 Linux 系统，也就是 Root 用户，Linux 系统默认是关闭 Root 账户的，我们需要为 Root 用户设置一个初始密码以方便我们使用。</p> <h3 id="设置-root-账户密码"><a href="#设置-root-账户密码" class="header-anchor">#</a> 设置 Root 账户密码</h3> <div class="language-text extra-class"><pre class="language-text"><code>sudo passwd root
+</code></pre></div><h3 id="root"><a href="#root" class="header-anchor">#</a> Root</h3> <div class="language-text extra-class"><pre class="language-text"><code>su
+</code></pre></div><h3 id="设置允许远程登录-root"><a href="#设置允许远程登录-root" class="header-anchor">#</a> 设置允许远程登录 Root</h3> <div class="language-text extra-class"><pre class="language-text"><code>nano /etc/ssh/sshd_config
+
+# Authentication:
+LoginGraceTime 120
+#PermitRootLogin without-password     //注释此行
+PermitRootLogin yes                             //加入此行
+StrictModes yes
+
+重启服务
+service ssh restart
+</code></pre></div><h2 id="用户账户说明"><a href="#用户账户说明" class="header-anchor">#</a> 用户账户说明</h2> <h3 id="普通用户"><a href="#普通用户" class="header-anchor">#</a> 普通用户</h3> <p>普通用户在系统上的任务是进行普通操作</p> <h3 id="超级管理员"><a href="#超级管理员" class="header-anchor">#</a> 超级管理员</h3> <p>管理员在系统上的任务是对普通用户和整个系统进行管理。对系统具有绝对的控制权，能够对系统进行一切操作。用 root 表示，root 用户在系统中拥有最高权限，默认下 Ubuntu 用户的 root 用户是不能登录的。</p> <h3 id="安装时创建的系统用户"><a href="#安装时创建的系统用户" class="header-anchor">#</a> 安装时创建的系统用户</h3> <p>此用户创建时被添加到 admin 组中，在 Ubuntu 中，admin 组中的用户默认是可以使用 <code>sudo</code> 命令来执行只有管理员才能执行的命令的。如果不使用 <code>sudo</code> 就是一个普通用户。</p> <h2 id="组账户说明"><a href="#组账户说明" class="header-anchor">#</a> 组账户说明</h2> <h3 id="私有组"><a href="#私有组" class="header-anchor">#</a> 私有组</h3> <p>当创建一个用户时没有指定属于哪个组，Linux 就会建立一个与用户同名的私有组，此私有组只含有该用户。</p> <h3 id="标准组"><a href="#标准组" class="header-anchor">#</a> 标准组</h3> <p>当创建一个用户时可以选定一个标准组，如果一个用户同时属于多个组时，登录后所属的组为主组，其他的为附加组。</p> <h2 id="账户系统文件说明"><a href="#账户系统文件说明" class="header-anchor">#</a> 账户系统文件说明</h2> <h3 id="etc-passwd"><a href="#etc-passwd" class="header-anchor">#</a> /etc/passwd</h3> <p>每一行代表一个账号，众多账号是系统正常运行所必须的，例如 bin，nobody 每行定义一个用户账户，此文件对所有用户可读。每行账户包含如下信息：</p> <div class="language- extra-class"><pre class="language-text"><code>root:x:0:0:root:/root:/bin/bash
+</code></pre></div><ul><li><strong>用户名：</strong> 就是账号，用来对应 UID，root UID 是 0。</li> <li><strong>口令：</strong> 密码，早期 UNIX 系统密码存在此字段，由于此文件所有用户都可以读取，密码容易泄露，后来这个字段数据就存放到 /etc/shadow 中，这里只能看到 X。</li> <li><strong>用户标示号（UID）：</strong> 系统内唯一，root 用户的 UID 为 0，普通用户从 1000 开始，1-999 是系统的标准账户，500-65536 是可登陆账号。</li> <li><strong>组标示号（GID）：</strong> 与 /etc/group 相关用来规定组名和 GID 相对应。</li> <li><strong>注释：</strong> 注释账号</li> <li><strong>宿主目录（主文件夹）：</strong> 用户登录系统后所进入的目录 root 在 /root/itcast</li> <li><strong>命令解释器（shell）：</strong> 指定该用户使用的 shell ，默认的是 /bin/bash</li></ul> <h3 id="etc-shadow"><a href="#etc-shadow" class="header-anchor">#</a> /etc/shadow</h3> <p>为了增加系统的安全性，用户口令通常用 shadow passwords 保护。只有 root 可读。每行包含如下信息：</p> <div class="language- extra-class"><pre class="language-text"><code>root:$6$Reu571.V$Ci/kd.OTzaSGU.TagZ5KjYx2MLzQv2IkZ24E1.yeTT3Pp4o/yniTjus/rRaJ92Z18MVy6suf1W5uxxurqssel.:17465:0:99999:7:::
+</code></pre></div><ul><li><p><strong>账号名称：</strong> 需要和 /etc/passwd 一致。</p></li> <li><p>密码：</p> <p>经过加密，虽然加密，但不表示不会被破解，该文件默认权限如下：</p> <ul><li>-rw------- 1 root root 1560 Oct 26 17:20 passwd-</li> <li>只有root能都读写</li></ul></li> <li><p><strong>最近修改密码日期：</strong> 从1970-1-1起，到用户最后一次更改口令的天数</p></li> <li><p><strong>密码最小时间间隔：</strong> 从1970-1-1起，到用户可以更改口令的天数</p></li> <li><p><strong>密码最大时间间隔：</strong> 从1970-1-1起，必须更改的口令天数</p></li> <li><p><strong>密码到期警告时间：</strong> 在口令过期之前几天通知</p></li> <li><p><strong>密码到期后账号宽限时间</strong></p></li> <li><p><strong>密码到期禁用账户时间：</strong> 在用户口令过期后到禁用账户的天数</p></li> <li><p><strong>保留</strong></p></li></ul> <h3 id="etc-group"><a href="#etc-group" class="header-anchor">#</a> /etc/group</h3> <p>用户组的配置文件</p> <div class="language- extra-class"><pre class="language-text"><code>root:x:0:
+</code></pre></div><ul><li><strong>用户组名称</strong></li> <li><strong>用户组密码：</strong> 给用户组管理员使用，通常不用</li> <li><strong>GID：</strong> 用户组的ID</li> <li><strong>此用户支持的账号名称：</strong> 一个账号可以加入多个用户组，例如想要 itcast 加入 root 这个用户组，将该账号填入该字段即可 root❌0:root, icast 将用户进行分组是 Linux 对用户进行管理及控制访问权限的一种手段。一个中可以有多个用户，一个用户可以同时属于多个组。该文件对所有用户可读。</li></ul> <h3 id="etc-gshadow"><a href="#etc-gshadow" class="header-anchor">#</a> /etc/gshadow</h3> <p>该文件用户定义用户组口令，组管理员等信息只有root用户可读。</p> <div class="language- extra-class"><pre class="language-text"><code>root:\*::
+</code></pre></div><ul><li><strong>用户组名</strong></li> <li><strong>密码列</strong></li> <li><strong>用户组管理员的账号</strong></li> <li><strong>用户组所属账号</strong></li></ul> <h2 id="账户管理常用命令"><a href="#账户管理常用命令" class="header-anchor">#</a> 账户管理常用命令</h2> <h3 id="增加用户"><a href="#增加用户" class="header-anchor">#</a> 增加用户</h3> <div class="language-text extra-class"><pre class="language-text"><code>useradd 用户名
+useradd -u (UID号)
+useradd -p (口令)
+useradd -g (分组)
+useradd -s (SHELL)
+useradd -d (用户目录)
+</code></pre></div><p>如：<code>useradd lusifer</code></p> <p>增加用户名为 lusifer 的账户</p> <h3 id="修改用户"><a href="#修改用户" class="header-anchor">#</a> 修改用户</h3> <div class="language-text extra-class"><pre class="language-text"><code>usermod -u (新UID)
+usermod -d (用户目录)
+usermod -g (组名)
+usermod -s (SHELL)
+usermod -p (新口令)
+usermod -l (新登录名)
+usermod -L (锁定用户账号密码)
+usermod -U (解锁用户账号)
+</code></pre></div><p>如：<code>usermod -u 1024 -g group2 -G root lusifer</code></p> <p>将 lusifer 用户 uid 修改为 1024，默认组改为系统中已经存在的 group2，并且加入到系统管理员组</p> <h3 id="删除用户"><a href="#删除用户" class="header-anchor">#</a> 删除用户</h3> <div class="language-text extra-class"><pre class="language-text"><code>userdel 用户名 (删除用户账号)
+userdel -r 删除账号时同时删除目录
+</code></pre></div><p>如：<code>userdel -r lusifer</code></p> <p>删除用户名为 lusifer 的账户并同时删除 lusifer 的用户目录</p> <h3 id="组账户维护"><a href="#组账户维护" class="header-anchor">#</a> 组账户维护</h3> <div class="language-text extra-class"><pre class="language-text"><code>groupadd 组账户名 (创建新组)
+groupadd -g 指定组GID
+groupmod -g 更改组的GID
+groupmod -n 更改组账户名
+groupdel 组账户名 (删除指定组账户)
+</code></pre></div><h3 id="口令维护"><a href="#口令维护" class="header-anchor">#</a> 口令维护</h3> <div class="language-text extra-class"><pre class="language-text"><code>passwd 用户账户名 (设置用户口令)
+passwd -l 用户账户名 (锁定用户账户)
+passwd -u 用户账户名 (解锁用户账户)
+passwd -d 用户账户名 (删除账户口令)
+gpasswd -a 用户账户名 组账户名 (将指定用户添加到指定组)
+gpasswd -d 用户账户名 组账户名 (将用户从指定组中删除)
+gpasswd -A 用户账户名 组账户名 (将用户指定为组的管理员)
+</code></pre></div><h3 id="用户和组状态"><a href="#用户和组状态" class="header-anchor">#</a> 用户和组状态</h3> <div class="language-text extra-class"><pre class="language-text"><code>su 用户名(切换用户账户)
+id 用户名(显示用户的UID，GID)
+whoami (显示当前用户名称)
+groups (显示用户所属组)
+</code></pre></div></div> <footer class="page-edit" style="display:none;"><div class="edit-link"><a href="https://github.com/AlanLee97/blog/edit/master/docs/server/linux/study/Linux08 - 用户和组管理.md" target="_blank" rel="noopener noreferrer">编辑</a> <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></div> <div class="last-updated"><span class="prefix">上次更新: </span> <span class="time">2020-1-24 08:54:59</span></div></footer> <!----> <!----></main> <!----> <div class="comments-wrapper" data-v-4698c43e><!----></div></div></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-a81d141e data-v-a81d141e><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-a81d141e><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-a81d141e></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-a81d141e></path></svg></div></div></div>
+    <script src="/assets/js/app.ae300a49.js" defer></script><script src="/assets/js/3.0a2a925c.js" defer></script><script src="/assets/js/1.cbe639dd.js" defer></script><script src="/assets/js/66.97fdd3d6.js" defer></script>
+  </body>
+</html>
