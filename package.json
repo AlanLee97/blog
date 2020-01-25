@@ -8,5 +8,7 @@
     "docs:build": "vuepress build docs",
     "publish": "deploy.sh"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@vuepress-reco/vuepress-plugin-bgm-player": "^1.1.1"
+  }
 }

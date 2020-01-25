@@ -2,7 +2,8 @@
 title: 摘要
 date: 2019-11-01
 home: true
-heroImage: /AlanLee.jpg
+#heroImage: /AlanLee.jpg
+heroText: AlanLee
 heroImageStyle: {
   maxHeight: '200px',
   display: block,
@@ -14,7 +15,7 @@ bgImage: '/bg2.jpg'
 bgImageStyle: {
   height: '500px'
 }
-isShowTitleInHome: false
+isShowTitleInHome: true
 
 ---
 

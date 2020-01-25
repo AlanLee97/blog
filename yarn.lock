@@ -869,6 +869,11 @@
   resolved "https://registry.yarnpkg.com/@vuepress-reco/vuepress-plugin-back-to-top/-/vuepress-plugin-back-to-top-1.0.8.tgz#ae2ef6496d026cf9fd6b8fd01f70df360819a8d0"
   integrity sha512-HE++T508B7ZIy/RtnZUVaKLESfD/LiKLUDO7pSVrEX94ZPYm3ecB3u4aIigJPkb/x+2oHGB69Q6bf2Z3w7FOxw==
 
+"@vuepress-reco/vuepress-plugin-bgm-player@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@vuepress-reco/vuepress-plugin-bgm-player/-/vuepress-plugin-bgm-player-1.1.1.tgz#dc4e8106ae8deb67a0f976d959084cafdd25887f"
+  integrity sha512-ppQj6YQoOqzAyR+6H4bEZjGus+bJkPrrKIIyBgqdf7SWQWcdlcGJRfEGI6Wv9HL9U7tS8GLMJzU7YhlCbTybEw==
+
 "@vuepress-reco/vuepress-plugin-comments@1.0.13":
   version "1.0.13"
   resolved "https://registry.yarnpkg.com/@vuepress-reco/vuepress-plugin-comments/-/vuepress-plugin-comments-1.0.13.tgz#aec5754fd5afb3df23277d6fdee1339db0b379af"
