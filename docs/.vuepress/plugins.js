@@ -1,5 +1,9 @@
 module.exports = {
     '@vuepress-reco/vuepress-plugin-bgm-player': {
+        floatPosition: 'right',
+        floatStyle: { bottom: '50px', 'z-index': '999999' },
+        position: { right: '10px', bottom: '10px', 'z-index': '999999'},
+        shrinkMode: 'mini',
         audios: [
             // 本地文件示例
             /*            {

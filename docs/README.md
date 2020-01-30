@@ -1,6 +1,4 @@
 ---
-title: 摘要
-date: 2019-11-01
 home: true
 #heroImage: /AlanLee.jpg
 heroText: AlanLee
@@ -29,12 +27,6 @@ Welcome to home of AlanLee~<br/>
 
 <!-- more -->
 
-学历 | 中山大学新华学院 | 本科
-
 姓名 | 李步官 | AlanLee
-
-生日 | 1997.04
-
-爱好 | 运动
 
 AlanLee热爱编程，喜欢学习互联网技术。

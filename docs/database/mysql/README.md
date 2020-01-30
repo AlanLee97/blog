@@ -1,4 +1,4 @@
-# mysql数据库
+# MySQL数据库
 <img :src="$withBase=('/note_images/mysql.jpg')"/>
 
 
