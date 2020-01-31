@@ -61,6 +61,10 @@ module.exports = {
         // 默认为 "Edit this page"
         editLinkText: '编辑',
 
+        // 备案
+        record: '粤ICP备19015903号',
+        recordLink: 'http://www.beian.miit.gov.cn/',
+
 
     },
 
