@@ -4,7 +4,14 @@ module.exports = [
         title: 'Docker',
         path: '/devtool/docker/',
         children: [
-            '/devtool/docker/'
+            {
+                title: '笔记',
+                path: '/devtool/docker/note/',
+                children: [
+                    '/devtool/docker/note/CentOS安装docker',
+                    '/devtool/docker/note/docker常用命令',
+                ]
+            },
         ]
     },
     {

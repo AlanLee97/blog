@@ -1,4 +1,6 @@
 module.exports = {
+    '/interview/': require('./config-sidebar/sidebar-interview'),
+
     '/backend/': require('./config-sidebar/sidebar-backend'),
 
     '/frontend/': require('./config-sidebar/sidebar-frontend'),
