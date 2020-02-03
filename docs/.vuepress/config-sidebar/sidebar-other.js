@@ -6,9 +6,16 @@ module.exports = [
         children: [
             {
                 title: '数组',
-                path: '/other/datastruct/array',
+                path: '/other/datastruct/array/',
                 children: [
                     '/other/datastruct/array/数组01 - 稀疏数组'
+                ]
+            },
+            {
+                title: '链表',
+                path: '/other/datastruct/linkedlist/',
+                children: [
+                    '/other/datastruct/linkedlist/链表01-单链表'
                 ]
             },
         ]
