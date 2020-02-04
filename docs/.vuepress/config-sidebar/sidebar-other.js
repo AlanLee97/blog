@@ -15,7 +15,8 @@ module.exports = [
                 title: '链表',
                 path: '/other/datastruct/linkedlist/',
                 children: [
-                    '/other/datastruct/linkedlist/链表01-单链表'
+                    '/other/datastruct/linkedlist/链表01-单链表',
+                    '/other/datastruct/linkedlist/单链表-面试题',
                 ]
             },
         ]
