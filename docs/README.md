@@ -26,7 +26,3 @@ Welcome to home of AlanLee~<br/>
 <img style="width: 100%;" :src="$withBase=('note_images/hero.gif')"/>
 
 <!-- more -->
-
-姓名 | 李步官 | AlanLee
-
-AlanLee热爱编程，喜欢学习互联网技术。

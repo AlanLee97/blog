@@ -15,8 +15,14 @@ module.exports = [
                     docPath_shuati_java + 'no002',
                     docPath_shuati_java + 'no003',
                     docPath_shuati_java + 'no004',
+                    docPath_shuati_java + 'no005',
+                    docPath_shuati_java + 'no006',
                     docPath_shuati_java + 'no007',
+                    docPath_shuati_java + 'no008',
                     docPath_shuati_java + 'no009',
+                    docPath_shuati_java + 'no010',
+                    docPath_shuati_java + 'no011',
+                    docPath_shuati_java + 'no012',
                 ]
             },
         ]
