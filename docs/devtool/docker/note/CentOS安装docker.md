@@ -42,6 +42,7 @@ yum list docker-ce --showduplicates | sort -r
 
 ```
 yum install docker-ce-版本号
+yum install docker-ce-18.03.1.ce
 ```
 
 
