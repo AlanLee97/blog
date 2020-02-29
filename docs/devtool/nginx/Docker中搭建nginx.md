@@ -1,3 +1,10 @@
+---
+date: 2020-02-28
+categories: 
+ - 服务器
+tags: 
+ - nginx
+---
 # Docker中搭建nginx
 
 

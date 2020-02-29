@@ -1,3 +1,10 @@
+---
+date: 2020-02-24
+categories: 
+ - 前端
+tags: 
+ - css弹性布局
+---
 # flex container的align-items属性
 
 align-items决定了flex items在cross axis上的对齐方式

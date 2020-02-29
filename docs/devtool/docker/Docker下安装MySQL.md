@@ -1,3 +1,10 @@
+---
+date: 2020-02-20
+categories: 
+ - 运维
+tags: 
+ - docker
+---
 # Docker下安装MySQL，普通安装方式和docker-compose方式安装
 
 ## 方式一

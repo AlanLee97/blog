@@ -1,3 +1,10 @@
+---
+date: 2020-02-24
+categories: 
+ - 前端
+tags: 
+ - css弹性布局
+---
 # flex items的align self属性
 
 flex items可以通过align-self覆盖flex container设置的align-items

@@ -1,3 +1,10 @@
+---
+date: 2020-02-20
+categories: 
+ - 运维
+tags: 
+ - docker
+---
 # 解决Docker容器应用中mvn: command not found的问题
 
 ## 问题

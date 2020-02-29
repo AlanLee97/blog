@@ -1,3 +1,10 @@
+---
+date: 2020-02-24
+categories: 
+ - 前端
+tags: 
+ - css弹性布局
+---
 # flex-items的order属性
 
 order决定了flex items的排布顺序

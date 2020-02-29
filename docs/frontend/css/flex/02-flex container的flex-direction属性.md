@@ -1,3 +1,10 @@
+---
+date: 2020-02-24
+categories: 
+ - 前端
+tags: 
+ - css弹性布局
+---
 # flex container的flex-direction属性
 
 flex items 默认都是沿着main axis（主轴方向）从main start 开始往main end方向排布

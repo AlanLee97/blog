@@ -1,3 +1,10 @@
+---
+date: 2020-02-24
+categories: 
+ - 前端
+tags: 
+ - css弹性布局
+---
 # flex items的flex-basis属性
 
 flex-basis属性定义了在分配多余空间之前，项目占据的主轴空间（main size）。浏览器根据这个属性，计算主轴是否有多余空间。它的默认值为auto，即项目的本来大小。它可以设为跟width或height属性一样的值（比如350px），则项目将占据固定空间。

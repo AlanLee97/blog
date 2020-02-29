@@ -1,3 +1,10 @@
+---
+date: 2020-02-24
+categories: 
+ - 前端
+tags: 
+ - css弹性布局
+---
 # flex items的flex-grow属性
 
 - flex-grow决定了flex items如何扩展

@@ -1,3 +1,10 @@
+---
+date: 2020-02-20
+categories: 
+ - 运维
+tags: 
+ - docker
+---
 # 安装docker-compose（国内高速镜像）
 
 gihub上下载docker-compose太慢了，下载不动，只能换成国内镜像（daocloud.io）来下载。

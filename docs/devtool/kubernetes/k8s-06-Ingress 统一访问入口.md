@@ -1,3 +1,10 @@
+---
+date: 2020-02-29
+categories: 
+ - 运维
+tags: 
+ - kubernetes
+---
 # Ingress 统一访问入口
 
 ## 什么是 Ingress
@@ -78,7 +85,7 @@ mkdir -p /usr/local/k8s/ingress && cd /usr/local/k8s/ingress
 wget https://raw.githubusercontent.com/kubernetes/ingress-nginx/master/deploy/static/mandatory.yaml
 ```
 
-![image-20200229123213081](E:/%E6%88%91%E7%9A%84%E5%9D%9A%E6%9E%9C%E4%BA%91/OneDrive/%E5%AD%A6%E4%B9%A0/%E7%AC%94%E8%AE%B0/%E5%9B%BE%E7%89%87/note_images/image-20200229123213081.png)
+![image-20200229123213081](https://alanlee-image-bed.oss-cn-shenzhen.aliyuncs.com/note_images/20200229204445-983627.png)
 
 
 
@@ -88,7 +95,7 @@ wget https://raw.githubusercontent.com/kubernetes/ingress-nginx/master/deploy/st
 vim mandatory.yaml
 ```
 
-![image-20200229124628506](E:/%E6%88%91%E7%9A%84%E5%9D%9A%E6%9E%9C%E4%BA%91/OneDrive/%E5%AD%A6%E4%B9%A0/%E7%AC%94%E8%AE%B0/%E5%9B%BE%E7%89%87/note_images/image-20200229124628506.png)
+![image-20200229124628506](https://alanlee-image-bed.oss-cn-shenzhen.aliyuncs.com/note_images/20200229204439-413345.png)
 
 
 
@@ -155,7 +162,7 @@ spec:
 kubectl apply -f ingress-deployment.yml
 ```
 
-![image-20200229130255313](E:/%E6%88%91%E7%9A%84%E5%9D%9A%E6%9E%9C%E4%BA%91/OneDrive/%E5%AD%A6%E4%B9%A0/%E7%AC%94%E8%AE%B0/%E5%9B%BE%E7%89%87/note_images/image-20200229130255313.png)
+![image-20200229130255313](https://alanlee-image-bed.oss-cn-shenzhen.aliyuncs.com/note_images/20200229204452-955347.png)
 
 
 

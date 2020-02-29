@@ -1,3 +1,10 @@
+---
+date: 2020-02-24
+categories: 
+ - 前端
+tags: 
+ - css弹性布局
+---
 # flex-wrap
 
 默认情况下flex items全部放在一行，当flex items宽度和大于flex container时，每个items的宽度会被压缩，flex-wrap:wrap则是让items在一行中放不下的时候会自动换行

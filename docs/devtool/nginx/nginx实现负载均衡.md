@@ -1,3 +1,10 @@
+---
+date: 2020-02-28
+categories: 
+ - 服务器
+tags: 
+ - nginx
+---
 # Nginx实现负载均衡
 
 ## 什么是负载均衡

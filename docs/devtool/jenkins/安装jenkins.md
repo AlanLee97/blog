@@ -1,3 +1,10 @@
+---
+date: 2020-02-24
+categories: 
+ - 运维
+tags: 
+ - jenkins
+---
 # 安装jenkins
 
 在docker中安装jenkins

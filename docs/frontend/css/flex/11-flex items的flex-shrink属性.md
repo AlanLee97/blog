@@ -1,3 +1,10 @@
+---
+date: 2020-02-24
+categories: 
+ - 前端
+tags: 
+ - css弹性布局
+---
 # flex items的flex-shrink属性
 
 flex-shrink属性定义了项目的缩小比例，默认为1，即如果空间不足，该项目将缩小。

@@ -1,3 +1,10 @@
+---
+date: 2020-02-27
+categories: 
+ - 问题解决
+tags: 
+ - 问题解决
+---
 # UnicodeEncodeError: 'gbk' codec can't encode character '\xa0' in position ... 问题解决办法
 
 ## 问题

@@ -21,8 +21,6 @@ const docPath_know = '/other/know/';
 
 
 
-
-
 //==================== BEGIN 数据结构-链表
 {
     const children_linkedlist = [
@@ -41,12 +39,36 @@ const docPath_know = '/other/know/';
 
 
 
+//==================== BEGIN 数据结构-桟
+{
+    const children_stack = [
+        '桟',
+        '桟的应用-使用桟完成计算一个表达式的结果',
+        '前缀表达式、中缀表达式、后缀表达式',
+
+    ];
+
+    function getChildrenStack(){
+        return children_stack.map((item) => {
+            return docPath_datastruct + "stack/" + item;
+        });
+    }
+}
+//-------------------- END 数据结构-桟
+
+
+
 
 //==================== BEGIN 问题解决
 {
     const children_resolve = [
-        'python读取文件编码问题',
         '解决谷歌浏览器安装插件提示INVALID_ID的问题',
+        '解决centos的yum命令不能使用的问题',
+        'mvn deploy出现401错误',
+        '解决SpringCloud Eureka配置的问题',
+        'python读取文件编码问题',
+        '解决修改代码仓库密码后无法git提交代码',
+        '解决redisTemplate存入数据后出现x00x00x00的问题',
     ];
 
     function getChildrenResolve(){
@@ -92,6 +114,11 @@ module.exports = [
                 title: '链表',
                 path: docPath_datastruct + 'linkedlist/',
                 children: getChildrenLinkedlist()
+            },
+            {
+                title: '桟',
+                path: docPath_datastruct + 'stack/',
+                children: getChildrenStack()
             },
         ]
     },

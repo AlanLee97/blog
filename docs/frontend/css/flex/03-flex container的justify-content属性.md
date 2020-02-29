@@ -1,3 +1,10 @@
+---
+date: 2020-02-24
+categories: 
+ - 前端
+tags: 
+ - css弹性布局
+---
 # flex container的justify-content属性
 
 justify-content决定了 flex items在main axis上的对齐方式

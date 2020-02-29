@@ -2,6 +2,7 @@
 //基本路径
 const docPath = '/backend/';
 const docPath_java = '/backend/' + 'java/';
+const docPath_python = '/backend/' + 'python/';
 
 
 //==================== BEGIN java-JavaSE
@@ -30,6 +31,22 @@ const docPath_java = '/backend/' + 'java/';
 //-------------------- END java-JavaSE
 
 
+//==================== BEGIN python-crawl
+{
+    const children_python_crawl = [
+        '06-selenium使用',
+        '07-使用selenium+phantomjs爬取B站关于小米10的视频',
+        '10-爬取ajax数据-马蜂窝旅游网',
+
+    ];
+
+    function getChildrenPythonCrawl(){
+        return children_python_crawl.map((item) => {
+            return docPath_python + 'crawl/' + item;
+        });
+    }
+}
+//-------------------- END python
 
 module.exports = [
     '',
@@ -78,9 +95,14 @@ module.exports = [
     {
         title: 'Python',
         collapsable: true,
-        path: '/backend/python/',
+        path: docPath_python,
         children: [
-            '/backend/python/'
+            {
+                title: '爬虫',
+                collapsable: true,
+                path: docPath_python + "crawl/",
+                children: getChildrenPythonCrawl()
+            },
 
         ]
     },

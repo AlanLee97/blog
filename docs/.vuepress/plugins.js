@@ -14,6 +14,12 @@ module.exports = {
                         },*/
             // 网络文件示例
             {
+                name: '你的答案',
+                artist: '阿冗',
+                url: 'https://gitee.com/AlanLee97/assert/raw/master/music/%E4%BD%A0%E7%9A%84%E7%AD%94%E6%A1%88%20-%20%E9%98%BF%E5%86%97.m4a',
+                cover: 'https://gitee.com/AlanLee97/assert/raw/master/images/%E4%BD%A0%E7%9A%84%E7%AD%94%E6%A1%88%20-%20%E9%98%BF%E5%86%97.jpg'
+            },
+            {
                 name: '安琪',
                 artist: '许嵩',
                 url: 'https://gitee.com/AlanLee97/assert/raw/master/music/%E5%AE%89%E7%90%AA-%E8%AE%B8%E5%B5%A9.m4a',

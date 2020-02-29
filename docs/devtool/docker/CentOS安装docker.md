@@ -1,3 +1,10 @@
+---
+date: 2020-02-20
+categories: 
+ - 运维
+tags: 
+ - docker
+---
 # CentOS安装Docker
 
 1. 安装要求

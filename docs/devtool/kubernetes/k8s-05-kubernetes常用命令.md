@@ -1,3 +1,10 @@
+---
+date: 2020-02-29
+categories: 
+ - 运维
+tags: 
+ - kubernetes
+---
 # kubernetes常用命令
 
 **查看组件状态**
@@ -24,7 +31,14 @@ kubectl get nodes
 kubectl get namespace
 ```
 
+**创建命名空间**
 
+```yaml
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: development
+```
 
 **运行容器**
 
@@ -37,6 +51,22 @@ kubectl run nginx --image=nginx --replicas=2 --port=80
 --replicas=2 创建实例的数量为2
 
 --port=80 指定容器端口为80
+
+
+
+**配置方式运行容器**
+
+```bash
+kubectl create -f xxx.yml
+```
+
+或
+
+```sh
+kubectl apply -f xxx.yml
+```
+
+
 
 **暴露服务**
 
@@ -66,6 +96,36 @@ kubectl get deployment -o wide
 kubectl get service -o wide
 ```
 
+**查看ingress**
+
+```bash
+kubectl get ingress
+```
+
+**查看持久卷**
+
+```bash
+kubectl get pv
+```
+
+**查看持久卷消费者**
+
+```bash
+kubectl get pvc
+```
+
+**查看 ConfigMap**
+
+```bash
+kubectl get cm <ConfigMap Name>
+```
+
+**修改 ConfigMap**
+
+```bash
+kubectl edit cm <ConfigMap Name>
+```
+
 **查看详情**
 
 ```sh
@@ -84,6 +144,12 @@ kubectl logs -f pod名字
 
 ```sh
 kubectl delete deploy名字
+```
+
+**配置方式删除容器**
+
+```bash
+kubectl delete -f xxx.yml
 ```
 
 **删除服务**

@@ -1,3 +1,10 @@
+---
+date: 2020-02-27
+categories: 
+ - 问题解决
+tags: 
+ - 问题解决
+---
 # 解决redisTemplate存入数据后值变成x00x00x00的问题
 
 ## 问题

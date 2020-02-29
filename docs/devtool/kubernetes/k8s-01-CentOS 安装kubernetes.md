@@ -1,14 +1,21 @@
+---
+date: 2020-02-29
+categories: 
+ - 运维
+tags: 
+ - kubernetes
+---
 # CentOS 安装kubernetes
 
-对于 Kubernetes 初学者，推荐在阿里云采购如下配置：
+机器配置要求：
 
-- 3台 2核4G 的ECS（突发性能实例 t5 ecs.t5-c1m2.large或同等配置，单台约 0.4元/小时，停机时不收费）
+- 3台 机器
 
-    - 第1台：my-master 这台机必须配置2个cpu以上
-    - 第2台：my-node-1
-    - 第2台：my-node-2
+    - 第1台：my-master 这台机必须配置2个cpu以上， 2G内存以上
+    - 第2台：my-node-1（1核2G）
+    - 第2台：my-node-2（1核2G）
 
-- Cent OS 7.6
+- 系统Cent OS 7.6 或ubuntu
 
     
 
@@ -300,25 +307,3 @@ kubectl delete node demo-node-x-x
 - node 节点的名字可以通过在节点 my-master 上执行 kubectl get nodes 命令获得
 
 
-
-## 安装 Ingress Controller
-
-在 my-master 上执行
-
-```shell
-# 只在 master 节点执行
-kubectl apply -f https://raw.githubusercontent.com/eip-work/eip-monitor-repository/master/dashboard/nginx-ingress.yaml
-```
-
-配置域名解析
-
-将域名 *.demo.yourdomain.com 解析到 demo-worker-a-2 的 IP 地址 z.z.z.z （也可以是 demo-worker-a-1 的地址 y.y.y.y）
-
-验证配置
-
-在浏览器访问 a.demo.yourdomain.com，将得到 404 NotFound 错误页面
-
-由于需要申请域名，过程会比较繁琐，有如下两种替代方案：
-
-- 在您的客户端机器（访问部署在K8S上的 web 应用的浏览器所在的机器）设置 hosts 配置；
-- 暂时放弃域名的配置，临时使用 NodePort 或者 kubectl port-forward 的方式访问部署在 K8S 上的 web 应用

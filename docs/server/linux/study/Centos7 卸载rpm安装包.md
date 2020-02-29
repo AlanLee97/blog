@@ -1,3 +1,10 @@
+---
+date: 2020-02-27
+categories: 
+ - 问题解决
+tags: 
+ - 问题解决
+---
 # Centos7 卸载rpm安装包
 
 查看rpm安装包列表：
