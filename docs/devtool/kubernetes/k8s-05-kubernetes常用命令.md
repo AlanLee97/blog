@@ -158,3 +158,11 @@ kubectl delete -f xxx.yml
 kubectl delete service名字
 ```
 
+
+
+**查看kube system信息**
+
+```sh
+kubectl get pods -n kube-system -o wide
+```
+
