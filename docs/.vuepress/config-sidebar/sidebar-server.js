@@ -18,6 +18,9 @@ const docPath_linux = docPath + 'linux/';
         'Linux09 -  文件权限管理',
         'Linux10 - 安装Java',
         'Linux11 - 安装Tomcat',
+        'Linux下安装JDK',
+        'Linux下安装Tengine',
+        'Linux下安装Tomcat（详细教程）',
 
     ];
 

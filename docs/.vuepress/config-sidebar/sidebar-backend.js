@@ -1,9 +1,11 @@
 
 //基本路径
 const docPath = '/backend/';
-const docPath_java = '/backend/' + 'java/';
-const docPath_python = '/backend/' + 'python/';
+const docPath_java = docPath + 'java/';
+const docPath_python = docPath + 'python/';
 
+const docPath_java_study_javase = docPath + 'java/study/javase/';
+const docPath_java_study_javaee = docPath + 'java/study/javaee/';
 
 //==================== BEGIN java-JavaSE
 {
@@ -29,6 +31,44 @@ const docPath_python = '/backend/' + 'python/';
     }
 }
 //-------------------- END java-JavaSE
+
+
+//==================== BEGIN java-JavaEE
+{
+    {   //study / ssm
+        const children_java_study_javaee_ssm = [
+            'SSM - 01 - 搭建Spring项目',
+            'SSM - 02 - 获取bean的方式',
+            'SSM - 03 - 依赖注入的3种方式',
+            'SSM - 04 - 装配Bean - XML方式',
+            'SSM - 05 - 装配Bean - 注解方式',
+            '整合SSM',
+
+        ];
+
+        function getChildrenJavaStudyJavaEESSM(){
+            return children_java_study_javaee_ssm.map((item) => {
+                return docPath_java_study_javaee + 'SSM/' + item;
+            });
+        }
+    }
+
+    {   //note
+        const children_java_note = [
+            'ArrayList的扩容机制',
+            'JVM内存区域讲解',
+
+        ];
+
+        function getChildrenJavaNote(){
+            return children_java_note.map((item) => {
+                return docPath_java + 'note/' + item;
+            });
+        }
+    }
+}
+//-------------------- END java-JavaEE
+
 
 
 //==================== BEGIN python-crawl
@@ -57,6 +97,12 @@ module.exports = [
         path: docPath_java,
         children: [
             {
+                title: '笔记',
+                collapsable: true,
+                path: docPath_java + "note/",
+                children: getChildrenJavaNote()
+            },
+            {
                 title: '学习',
                 collapsable: true,
                 path: docPath_java + 'study/',
@@ -64,16 +110,21 @@ module.exports = [
                     {
                         title: 'JavaSE',
                         collapsable: true,
-                        path: '/backend/java/study/javase/',
+                        path: docPath_java_study_javase,
                         children: getChildrenJavaStudyJavaSE()
                     },
 
                     {
                         title: 'JavaEE',
                         collapsable: true,
-                        path: '/backend/java/study/javaee/',
+                        path: docPath_java_study_javaee,
                         children: [
-                            '/backend/java/study/javaee/'
+                            {
+                                title: 'SSM',
+                                collapsable: true,
+                                path: docPath_java_study_javaee + "SSM/",
+                                children: getChildrenJavaStudyJavaEESSM()
+                            },
                         ]
                     },
                 ]

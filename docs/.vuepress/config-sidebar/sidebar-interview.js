@@ -3,7 +3,22 @@ const docPath_shuati_java = '/interview/shuati/java/';
 const docPath_shuati_summary = '/interview/shuati/summary/';
 const docPath_zhuanlan_java = '/interview/zhuanlan/java/';
 const docPath_experience = '/interview/experience/';
+const docPath_resume = '/interview/resume/';
 
+
+//==================== BEGIN 个人简历
+{
+    const children_resume = [
+        '李步官的简历',
+    ];
+
+    function getChildrenResume(){
+        return children_resume.map((item) => {
+            return docPath_resume + item;
+        });
+    }
+}
+//-------------------- END 个人简历
 
 
 //==================== BEGIN 刷题-java
@@ -138,6 +153,18 @@ const docPath_experience = '/interview/experience/';
 //导出配置
 module.exports = [
     '',
+    {
+        title: '个人简历',
+        path: docPath_resume,
+        children: [
+            {
+                title: '我的简历',
+                path: docPath_resume,
+                children: getChildrenResume()
+            },
+
+        ]
+    },
     {
         title: '刷题',
         path: '/interview/shuati/',
