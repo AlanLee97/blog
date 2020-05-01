@@ -144,3 +144,63 @@ List<AppointmentEntity> _appointmentList = [];
 
 ## 问题6
 
+No connected devices found; please connect a device, or see flutter.io/setup for getting started instructions.
+
+
+
+![image-20200430121140839](C:\Users\AlanLee\AppData\Roaming\Typora\typora-user-images\image-20200430121140839.png)
+
+
+
+### 解决
+
+在flutter的sdk，目录下找到flutter_console.bat 文件，双击运行
+
+输入
+
+```
+flutter config --android-sdk "D:\SDK\Android"
+```
+
+"D:\SDK\Android"为Android的SDK目录
+
+重启IDE即可
+
+
+
+## 问题7
+
+### 问题
+
+Unhandled Exception: MissingPluginException(No implementation found for method launch on channel)
+
+### 解决
+
+先停止APP，再重新启动即可
+
+
+
+## 问题8
+
+Vertical viewport was given unbounded height.
+The relevant error-causing widget was: ListView file:///G:/MyCode/Android/Project/flutter-panda-appointment/lib/pages/user/user_page.dart:97:35
+
+这个问题主要是`ListView.builder`出现的问题，如果是简单用的话，会出现这个问题的话，这时候，我们只需要在ListView.builder加入`shrinkWrap: true,`
+
+```dart
+child: ListView.builder(
+    itemCount: _appointmentList.length,
+    shrinkWrap: true,
+    itemBuilder: (context, int index){
+        return AppointmentInfoItem(_appointmentList[index]);
+    }),
+```
+
+
+
+
+
+## 问题9
+
+Flutter 嵌套的ListView不能滚动
+
