@@ -29,7 +29,7 @@ yum -y install keepalived
 
 主要配置4个地方
 
-![image-20200425095003540](E:/%E6%88%91%E7%9A%84%E5%9D%9A%E6%9E%9C%E4%BA%91/OneDrive/%E5%AD%A6%E4%B9%A0/%E7%AC%94%E8%AE%B0/%E5%9B%BE%E7%89%87/note_images/image-20200425095003540.png)
+![image-20200425095003540](https://gitee.com/AlanLee97/assert/raw/master/note_images/image-20200425095003540.png)
 
 
 
@@ -69,7 +69,7 @@ vrrp_instance VI_1 {
 
 查看ip
 
-![image-20200425102447353](E:/%E6%88%91%E7%9A%84%E5%9D%9A%E6%9E%9C%E4%BA%91/OneDrive/%E5%AD%A6%E4%B9%A0/%E7%AC%94%E8%AE%B0/%E5%9B%BE%E7%89%87/note_images/image-20200425102447353.png)
+![image-20200425102447353](https://gitee.com/AlanLee97/assert/raw/master/note_images/image-20200425102447353.png)
 
 
 
@@ -109,11 +109,11 @@ vrrp_instance VI_1 {
 
 查看ip
 
-![image-20200425102552945](https://alanlee-image-bed.oss-cn-shenzhen.aliyuncs.com/note_images/20200425112737-652506.png)
+![image-20200425102552945](https://gitee.com/AlanLee97/assert/raw/master/note_images/20200425112737-652506.png)
 
 只有当主节点的Keepalived停掉时，备用节点才会生成虚拟ip
 
-![image-20200425120316441](https://alanlee-image-bed.oss-cn-shenzhen.aliyuncs.com/note_images/20200425120320-891120.png)
+![image-20200425120316441](https://gitee.com/AlanLee97/assert/raw/master/note_images/20200425120320-891120.png)
 
 
 
@@ -176,15 +176,15 @@ service keepalived start
 
 为了区分主备Nginx，修改一下Nginx主页
 
-![image-20200425100407097](https://alanlee-image-bed.oss-cn-shenzhen.aliyuncs.com/note_images/20200425100407-304620.png)
+![image-20200425100407097](https://gitee.com/AlanLee97/assert/raw/master/note_images/20200425100407-304620.png)
 
-![image-20200425100502281](https://alanlee-image-bed.oss-cn-shenzhen.aliyuncs.com/note_images/20200425100502-880517.png)
+![image-20200425100502281](https://gitee.com/AlanLee97/assert/raw/master/note_images/20200425100502-880517.png)
 
 浏览器访问虚拟ip，http://192.168.1.100/
 
 首先进来的是主Nginx
 
-![image-20200425100638472](E:/%E6%88%91%E7%9A%84%E5%9D%9A%E6%9E%9C%E4%BA%91/OneDrive/%E5%AD%A6%E4%B9%A0/%E7%AC%94%E8%AE%B0/%E5%9B%BE%E7%89%87/note_images/image-20200425100638472.png)
+![image-20200425100638472](https://gitee.com/AlanLee97/assert/raw/master/note_images/image-20200425100638472.png)
 
 当停掉主Nginx，会访问到备用Nginx
 
@@ -194,4 +194,4 @@ service nginx stop
 
 再次访问http://192.168.1.100/，进入到备用Nginx
 
-![image-20200425111547000](E:/%E6%88%91%E7%9A%84%E5%9D%9A%E6%9E%9C%E4%BA%91/OneDrive/%E5%AD%A6%E4%B9%A0/%E7%AC%94%E8%AE%B0/%E5%9B%BE%E7%89%87/note_images/image-20200425111547000.png)
+![image-20200425111547000](https://gitee.com/AlanLee97/assert/raw/master/note_images/image-20200425111547000.png)

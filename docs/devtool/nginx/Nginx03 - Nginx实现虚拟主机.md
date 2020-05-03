@@ -195,7 +195,7 @@ vim /etc/hosts
 127.0.0.1 v2.vhost.com
 ```
 
-![image-20200424133724032](E:/%E6%88%91%E7%9A%84%E5%9D%9A%E6%9E%9C%E4%BA%91/OneDrive/%E5%AD%A6%E4%B9%A0/%E7%AC%94%E8%AE%B0/%E5%9B%BE%E7%89%87/note_images/image-20200424133724032.png)
+![image-20200424133724032](https://gitee.com/AlanLee97/assert/raw/master/note_images/image-20200424133724032.png)
 
 
 
@@ -294,10 +294,10 @@ sbin/nginx -s reload
 
 浏览器访问http://192.168.1.7:81
 
-![image-20200424135033003](https://alanlee-image-bed.oss-cn-shenzhen.aliyuncs.com/note_images/20200424135035-175355.png)
+![image-20200424135033003](https://gitee.com/AlanLee97/assert/raw/master/note_images/20200424135035-175355.png)
 
 #### 访问82端口
 
 浏览器访问http://192.168.1.7:82
 
-![image-20200424134908205](E:/%E6%88%91%E7%9A%84%E5%9D%9A%E6%9E%9C%E4%BA%91/OneDrive/%E5%AD%A6%E4%B9%A0/%E7%AC%94%E8%AE%B0/%E5%9B%BE%E7%89%87/note_images/image-20200424134908205.png)
+![image-20200424134908205](https://gitee.com/AlanLee97/assert/raw/master/note_images/image-20200424134908205.png)

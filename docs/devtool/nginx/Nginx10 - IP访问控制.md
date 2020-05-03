@@ -1,29 +1,5 @@
 # 访问控制
 
-## 安装httpd
-
-```sh
-yum install httpd -y
-```
-
-
-
-## 创建用户和密码
-
-创建存放密码文件的目录
-
-```sh
-cd /root/www
-```
-
-创建用户和密码
-
-```sh
-htpasswd -b -c -m user alanlee 123456
-```
-
-
-
 
 
 ## 编辑配置文件
@@ -96,7 +72,7 @@ sbin/nginx -s reload
 
 浏览器输入http://192.168.1.20:85/，出现禁止访问
 
-![image-20200424224214370](https://alanlee-image-bed.oss-cn-shenzhen.aliyuncs.com/note_images/20200424224222-227178.png)
+![image-20200424224214370](https://gitee.com/AlanLee97/assert/raw/master/note_images/20200424224222-227178.png)
 
 服务器内访问
 
@@ -104,4 +80,4 @@ sbin/nginx -s reload
 curl 192.168.1.20:85
 ```
 
-![image-20200424224409857](https://alanlee-image-bed.oss-cn-shenzhen.aliyuncs.com/note_images/20200424224410-308849.png)
+![image-20200424224409857](https://gitee.com/AlanLee97/assert/raw/master/note_images/20200424224410-308849.png)

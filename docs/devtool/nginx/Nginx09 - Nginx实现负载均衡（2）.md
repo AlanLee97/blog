@@ -82,11 +82,11 @@ sbin/nginx -s reload
 
 ## 访问测试
 
-访问Nginx的84端口，请求会轮流的转发到`Tomcat1`和`Tomcat2`
+访问Nginx的http://192.168.1.20:84，请求会轮流的转发到`Tomcat1`和`Tomcat2`
 
-![image-20200424223452544](E:/%E6%88%91%E7%9A%84%E5%9D%9A%E6%9E%9C%E4%BA%91/OneDrive/%E5%AD%A6%E4%B9%A0/%E7%AC%94%E8%AE%B0/%E5%9B%BE%E7%89%87/note_images/image-20200424223452544.png)
+![image-20200424223452544](https://gitee.com/AlanLee97/assert/raw/master/note_images/image-20200424223452544.png)
 
-![image-20200424223615713](https://alanlee-image-bed.oss-cn-shenzhen.aliyuncs.com/note_images/20200424223616-818039.png)
+![image-20200424223615713](https://gitee.com/AlanLee97/assert/raw/master/note_images/20200424223616-818039.png)
 
 
 

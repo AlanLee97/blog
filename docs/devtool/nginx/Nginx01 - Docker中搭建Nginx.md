@@ -9,7 +9,28 @@ tags:
 
 
 
+## 方式1：docker-compose
 
+### 创建目录
+
+```sh
+mkdir -p /usr/local/docker/nginx
+cd /usr/local/docker/nginx
+```
+
+
+
+
+
+### 编写docker-compose.yml文件
+
+```sh
+vim docker-compose.yml
+```
+
+
+
+docker-compose.yml
 
 ```yml
 version: '3.1'
@@ -19,8 +40,7 @@ services:
     image: nginx
     container_name: nginx
     ports:
-     - 81:80
-     - 9000:9000
+     - 80:80
     volumes:
      - ./conf/nginx.conf:/etc/nginx/nginx.conf
      - ./wwwroot:/usr/share/nginx/wwwroot
@@ -29,10 +49,46 @@ services:
 
 
 
+### 创建目录用于挂载配置文件
+
+```sh
+mkdir ./wwwroot
+vim ./conf/nginx.conf
 ```
+
+nginx.conf的内容，见文章后面的附录
+
+
+
+### 运行
+
+```sh
+docker-compose up -d
+```
+
+
+
+
+
+## 方式2：docker
+
+### 创建目录用于挂载配置文件
+
+```sh
+mkdir -p /usr/local/docker/nginx/wwwroot
+vim /usr/local/docker/nginx/conf
+```
+
+
+
+### 运行
+
+直接输入命令
+
+```sh
 docker run \
 -d --name nginx-1 \
--p 81:80 \
+-p 80:80 \
 -v /usr/local/docker/nginx/conf:/etc/nginx/nginx.conf \
 -v /usr/local/docker/nginx/wwwroot:/usr/share/nginx/wwwroot \
 nginx
@@ -40,41 +96,44 @@ nginx
 
 
 
-```
-docker run -d --name nginx-1 -p 81:80 -v ./conf/nginx.conf: /etc/nginx/nginx.conf -v ./wwwroot: /usr/share/nginx/wwwroot nginx
-```
+## 附录
 
 nginx.conf
 
 ```conf
-worker_processes 1;
+
+user  root;
+worker_processes  1;
 
 events {
-    worker_connections 1024;
+    worker_connections  1024;
 }
 
+
 http {
-    include mime.types;
-    default_type application/octet-stream;
-    sendfile on;
-    keepalive_timeout 65;
+    include       mime.types;
+    default_type  application/octet-stream;
+    sendfile        on;
+    keepalive_timeout  65;
     server {
-        listen 81;
-        server_name 47.103.204.62;
+        listen       80;
+        server_name  localhost;
+
         location / {
-        	root /usr/share/nginx/wwwroot/html81;
-        	index index.html index.htm;
+            root   html;
+            index  index.html index.htm;
         }
-    }
-    
-    server {
-        listen 9000;
-        server_name 47.103.204.62;
-        location / {
-        	root /usr/share/nginx/wwwroot/html9000;
-        	index index.html index.htm;
+
+        error_page   500 502 503 504  /50x.html;
+        location = /50x.html {
+            root   html;
         }
+
     }
+
 }
+
 ```
+
+
 
