@@ -202,5 +202,34 @@ child: ListView.builder(
 
 ## 问题9
 
-Flutter 嵌套的ListView不能滚动
+Flutter ListView嵌套在children中不能滚动
 
+### 解决
+
+使用Flex包裹Expanded，Expanded再包裹ListView
+
+![image-20200505132808858](https://gitee.com/AlanLee97/assert/raw/master/note_images/image-20200505132808858.png)
+
+
+
+## 问题10
+
+TabbarView在Container中不显示
+
+### 解决
+
+Container指定高度即可
+
+```dart
+height: double.maxFinite,
+```
+
+
+
+## 问题11
+
+Swiper不能嵌套在有children属性的组件中
+
+### 解决
+
+用Container包裹，并且一定要指定Container的高度
