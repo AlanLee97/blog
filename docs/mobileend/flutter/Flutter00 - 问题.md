@@ -233,3 +233,21 @@ Swiper不能嵌套在有children属性的组件中
 ### 解决
 
 用Container包裹，并且一定要指定Container的高度
+
+
+
+## 问题12
+
+在有输入框的情况下，呼出键盘，导致屏幕溢出错误
+
+### 解决
+
+在Scaffold中添加`resizeToAvoidBottomPadding: false,`
+
+```dart
+return Scaffold(
+  resizeToAvoidBottomPadding: false,
+  appBar: ...
+  body: ...
+)
+```
