@@ -1,0 +1,3 @@
+## openfeign调用post服务并且传递对象参数是null
+
+需要在feign接口和 controller的方法中都加上 @RequestBody注解
